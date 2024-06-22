@@ -27,10 +27,6 @@ let gameData = {
 };
 
 
-
-
-
-
 resetButton.addEventListener("click", resetbuton);
 buton3.addEventListener('click', sax);
 
@@ -74,7 +70,7 @@ else if (computermove >= 1 / 3 && computermove < 2 / 3) {
   gameData.playerMoves.push("sten"); 
   gameData.resultOfthegame.push(result);
   gameData.showresult();
-  showthegameContent()
+  displayofthegame()
  
 }
 
@@ -155,7 +151,7 @@ gameData.computerMovesResult.push(levizjekompjuterike);
 gameData.playerMoves.push('påse');
 gameData.resultOfthegame.push(result);
 gameData.showresult();
-showthegameContent()
+displayofthegame()
 }
 
 // const dykmjaGuri = document.getElementById("Rock");
@@ -204,15 +200,15 @@ function sax() {
   gameData.playerMoves.push('sax'); 
   gameData.resultOfthegame.push(result);
   gameData.showresult();
-  // showthegameContent()
+  displayofthegame()
 }
 
 
-function showwinner () {
-  const inputplace = document.getElementById('displaydatorndrag');
+// function showwinner () {
+//   const inputplace = document.getElementById('displaydatorndrag');
 
   
-}
+// }
 
 
 
@@ -223,19 +219,12 @@ function showwinner () {
 //  let newp = document.createElement("p");
 //   rrjedhjaLojes.appendChild(newp);
 //   newp.textContent = `
-
-  // if(gameData.resultOfthegame.slice(-1) == "lika"){
-  //  newp.style.backgroundColor = "orange"
-  // }
-  // else if (gameData.resultOfthegame.slice(-1) == "vinst"){
-  //   newp.style.backgroundColor = "green";
-  // }
-  // else if (gameData.resultOfthegame.slice(-1) == "förlust"){
-  //   newp.style.backgroundColor = "red";
-  // };
+//     this is the computure-move: ${this.computerMovesResult.slice(-1)}
+//     this is the player-move: ${this.playerMoves.slice(-1)}
+//     this is the result: ${this.resultOfthegame.slice(-1)}
+//     `
 
 
-  // scroller();
 // }            
 
 
@@ -258,3 +247,30 @@ function showwinner () {
   
 // }, 3000);
 // }
+function showdisplayofgame() {
+  const displayoftheresult = document.getElementById('displayofthegame');
+  displayoftheresult.classList.add('showit');
+}
+
+function displayofthegame() {
+  showdisplayofgame()
+  const displayoftheresult = document.getElementById('displayofthegame');
+  const datornsdrag = displayoftheresult.children[0];
+  const dittdrag = displayoftheresult.children[1];
+  const resultatet = displayoftheresult.children[2];
+  if(gameData.resultOfthegame.slice(-1) == 'lika') {
+    resultatet.style.color = 'orange';
+  }
+  else if(gameData.resultOfthegame.slice(-1) == 'förlust') {
+    resultatet.style.color = 'red';
+  }
+  else if (gameData.resultOfthegame.slice(-1) == 'vinst') {
+    resultatet.style.color = 'green';
+  }
+
+  datornsdrag.textContent = 'datorn valde:  ' + gameData.computerMovesResult.slice(-1);
+  dittdrag.textContent = 'du valde:  ' + gameData.playerMoves.slice(-1);
+  resultatet.textContent = 'därför:  ' + gameData.resultOfthegame.slice(-1);
+
+
+}
