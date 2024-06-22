@@ -137,6 +137,7 @@
   box-shadow: 5px 5px 5px black;
   
 }
-#gamecontent {
+#displaydatorndrag {
+    display: none;
   margin-top: 200px;
 }
