@@ -1,0 +1,142 @@
+.trupi{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulli{
+    font-size: 30px;
+    color: lightblue;
+    display: block;
+    margin-bottom: 40px;
+
+}
+.paraqitja{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.stenbild{
+    width: 50px;
+    height: 50px;
+}
+.stenbild:active{
+    animation: hover 0.5s infinite;
+}
+@keyframes hover{
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+.påsebild{    
+    width: 50px;
+    height: 50px;
+}
+.påsebild:active{
+    animation: påse 0.5s infinite;
+}
+@keyframes påse{
+    from {
+      transform: translateY(-40px)
+    }
+    to {
+      transform:translateZ(100px)
+    }
+  }
+.saxbild{
+    width: 50px;
+    height: 50px;
+}
+.saxbild:active{
+    animation: sax 0.5s infinite;
+}
+@keyframes sax{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(220deg);
+    }
+  }
+/* .ekrani{
+  display: block;
+  position: relative;
+  background-color: lightblue;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  animation: fallDown 2s forwards;
+}
+@keyframes falldown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ekrani {
+  display: block; /* Changing from 'none' to 'block' to make it visible */
+  position: relative; /* Adding position relative to enable absolute positioning */
+  background-color: lightblue;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  animation: slideInFromLeft 1s forwards; /* Apply the animation */
+}
+
+.inputKatror{
+  display: none;
+} 
+.inputKatror.showit{
+  display: block;
+
+}
+
+.shake{
+  animation: shake 2s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10%, 90% { transform: translateX(-5px); }
+  20%, 80% { transform: translateX(5px); }
+  30%, 50%, 70% { transform: translateX(-5px); }
+  40%, 60% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+#displaydatorndrag {
+  display: none;
+
+}
+#displaydatorndrag.showit {
+  display: block;
+  background-color: lightblue;
+  height: 75px;
+  width: 200px;
+  border-radius: 7%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  border-color: transparent;
+  box-shadow: 5px 5px 5px black;
+  
+}
+#gamecontent {
+  margin-top: 200px;
+}
