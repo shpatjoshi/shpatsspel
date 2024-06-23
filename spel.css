@@ -17,8 +17,8 @@
     justify-content: space-between;
 }
 .stenbild{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 .stenbild:active{
     animation: hover 0.5s infinite;
@@ -32,8 +32,8 @@
     }
   }
 .påsebild{    
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 .påsebild:active{
     animation: påse 0.5s infinite;
@@ -47,8 +47,8 @@
     }
   }
 .saxbild{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 .saxbild:active{
     animation: sax 0.5s infinite;
