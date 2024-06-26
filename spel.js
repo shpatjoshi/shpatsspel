@@ -47,15 +47,15 @@ else if (computermove >= 1 / 3 && computermove < 2 / 3) {
  }   
 
 
-  if(levizjekompjuterike=== "sten"){
+  if(levizjekompjuterike == "sten"){
     result = "lika";
     ekrani.style.color = "purple";
   }
-  else if (levizjekompjuterike > "påse"){
+  else if (levizjekompjuterike == "påse"){
     result = "förlust";
     ekrani.style.color = "red";
   }
-  else {
+  else if (levizjekompjuterike == 'sax') {
     result = "vinst";
     ekrani.style.color = "green";
   }
