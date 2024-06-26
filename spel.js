@@ -52,12 +52,12 @@ else if (computermove >= 1 / 3 && computermove < 2 / 3) {
     ekrani.style.color = "purple";
   }
   else if (levizjekompjuterike > "påse"){
-    result = "förlust";
-    ekrani.style.color = "red";
-  }
-  else {
     result = "vinst";
     ekrani.style.color = "green";
+  }
+  else {
+    result = "förlust";
+    ekrani.style.color = "red";
   }
 
   setInterval(() => {
