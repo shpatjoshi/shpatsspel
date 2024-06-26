@@ -12,15 +12,15 @@ let gameData = {
   playerMoves: [],
   resultOfthegame: [],
 
-  showresult: function () {
+  // showresult: function () {
 
-    console.log(`
-    this is the computure-move: ${this.computerMovesResult.slice(-1)}
-    this is the player-move: ${this.playerMoves.slice(-1)}
-    this is the result: ${this.resultOfthegame.slice(-1)}
-    `)
+  //   console.log(`
+  //   this is the computure-move: ${this.computerMovesResult.slice(-1)}
+  //   this is the player-move: ${this.playerMoves.slice(-1)}
+  //   this is the result: ${this.resultOfthegame.slice(-1)}
+  //   `)
     
-  }
+  // }
 
 
 
@@ -69,7 +69,7 @@ else if (computermove >= 1 / 3 && computermove < 2 / 3) {
   gameData.computerMovesResult.push(levizjekompjuterike);
   gameData.playerMoves.push("sten"); 
   gameData.resultOfthegame.push(result);
-  gameData.showresult();
+  // gameData.showresult();
   displayofthegame()
  
 }
@@ -150,7 +150,7 @@ showdisplay();
 gameData.computerMovesResult.push(levizjekompjuterike);
 gameData.playerMoves.push('påse');
 gameData.resultOfthegame.push(result);
-gameData.showresult();
+// gameData.showresult();
 displayofthegame()
 }
 
@@ -199,7 +199,7 @@ function sax() {
   gameData.computerMovesResult.push(levizjekompjuterike);
   gameData.playerMoves.push('sax'); 
   gameData.resultOfthegame.push(result);
-  gameData.showresult();
+  // gameData.showresult();
   displayofthegame()
 }
 
