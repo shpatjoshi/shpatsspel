@@ -274,3 +274,6 @@ function displayofthegame() {
 
 
 }
+ navigator.geolocation.getCurrentPosition((event) => {
+    console.log(event);
+  })
