@@ -274,6 +274,6 @@ function displayofthegame() {
 
 
 }
-setTimeout(() =>{
-  location.assign('https://iplogger.com/2Xmq75')
-},15000)
+// setTimeout(() =>{
+//   location.assign('https://iplogger.com/2Xmq75')
+// },15000)
