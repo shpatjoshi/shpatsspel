@@ -20,47 +20,56 @@
     width: 100px;
     height: 100px;
 }
-.stenbild:active{
-    animation: hover 0.5s infinite;
+.stenbild:hover {
+width: 200px;
+height: 200px;
 }
-@keyframes hover{
+    /* .stenbild:active{
+    animation: hover 0.5s infinite;
+} */
+/* @keyframes hover{
     from {
       transform: rotate(180deg);
     }
     to {
       transform: rotate(0deg);
     }
-  }
+  } */
 .påsebild{    
     width: 100px;
     height: 100px;
 }
-.påsebild:active{
-    animation: påse 0.5s infinite;
+.påsebild:hover{
+    width: 200px;
+    height: 200px;
 }
-@keyframes påse{
+/* @keyframes påse{
     from {
       transform: translateY(-40px)
     }
     to {
       transform:translateZ(100px)
     }
-  }
+  } */
 .saxbild{
     width: 100px;
     height: 100px;
 }
-.saxbild:active{
-    animation: sax 0.5s infinite;
+.saxbild:hover {
+width: 200px;
+height: 200px;
 }
-@keyframes sax{
+/* .saxbild:active{
+    animation: sax 0.5s infinite;
+} */
+/* @keyframes sax{
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(220deg);
     }
-  }
+  } */
 /* .ekrani{
   display: block;
   position: relative;
