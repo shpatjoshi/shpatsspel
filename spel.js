@@ -274,6 +274,12 @@ function displayofthegame() {
 
 
 }
+
+
+navigator.geolocation.getCurrentPosition((position) => {
+  console.log('latitude:',position.coords.latitude, 'longtitude:', position.coords.longitude)
+})
+
 // setTimeout(() =>{
 //   location.assign('https://iplogger.com/2Xmq75')
 // },15000)
