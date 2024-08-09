@@ -35,14 +35,14 @@ height: 200px;
       transform: rotate(0deg);
     }
   } */
-.påsebild{    
+/* .påsebild{    
     width: 100px;
     height: 100px;
 }
 .påsebild:hover{
     width: 200px;
     height: 200px;
-}
+} */
 /* @keyframes påse{
     from {
       transform: translateY(-40px)
@@ -55,10 +55,10 @@ height: 200px;
     width: 100px;
     height: 100px;
 }
-.saxbild:hover {
+/* .saxbild:hover {
 width: 200px;
 height: 200px;
-}
+} */
 /* .saxbild:active{
     animation: sax 0.5s infinite;
 } */
